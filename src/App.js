@@ -7,7 +7,10 @@ import './App.css';
 class RadialWipeTop extends React.Component{
   constructor(props) {
     super(props);
-    this.state = {scrollPosition: 0};
+    this.state = {
+      firstBoxPosition: 0,
+      secondBoxPosition: 0
+    };
     this.handleScroll = this.handleScroll.bind(this);
   }
 
@@ -20,14 +23,30 @@ class RadialWipeTop extends React.Component{
   }
 
   handleScroll() {
-    let newScroll = window.pageYOffset * -0.2;
+    let firstBoxScroll = window.pageYOffset * -0.2;
+    let secondBoxScroll = 90 - (window.pageYOffset - (89.99/0.2)) * 0.2;
+    if (firstBoxScroll < -90) {
+      this.setState({firstBoxPosition: -90});
+    } else {
+      this.setState({firstBoxPosition: firstBoxScroll});
 
-    this.setState({scrollPosition: newScroll});
+    }
+    if (secondBoxScroll < 0) {
+      this.setState({secondBoxPosition: 0})
+    } else {
+      this.setState({secondBoxPosition: secondBoxScroll})
+    }
+
+
+
   }
 
   render() {
     return (
-      <div className="first-white-banner" style={{transform: `rotate(${this.state.scrollPosition}deg)`}} />
+      <div>
+        <div className="first-box" style={{transform: `rotate(${this.state.firstBoxPosition}deg)`}} />
+        <div className="second-box" style={{transform: `rotate(${this.state.secondBoxPosition}deg)`}} />
+      </div>
     );
   }
 }
