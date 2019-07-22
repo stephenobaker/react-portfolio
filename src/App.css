@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 1400px;
 }
 
 .App-logo {
@@ -30,4 +31,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.first-white-banner {
+  background-color: darkblue;
+  height: calc(100vh + 100vw);
+  width: calc(100vh + 100vw);
+  transform-origin: top left;
+  position: fixed;
+  z-index: 1;
+  top: 100vh;
 }
