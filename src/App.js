@@ -4,12 +4,13 @@ import './App.css';
 
 
 
-class RadialWipeTop extends React.Component{
+class RadialWipeTop extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       firstBoxPosition: 0,
-      secondBoxPosition: 0
+      secondBoxPosition: 90,
+      radialWipeDone: false
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -32,9 +33,15 @@ class RadialWipeTop extends React.Component{
 
     }
     if (secondBoxScroll < 0) {
-      this.setState({secondBoxPosition: 0})
+      this.setState({
+        secondBoxPosition: 0,
+        radialWipeDone: true
+      });
     } else {
-      this.setState({secondBoxPosition: secondBoxScroll})
+      this.setState({
+        secondBoxPosition: secondBoxScroll,
+        radialWipeDone: false
+      });
     }
 
 
@@ -44,13 +51,44 @@ class RadialWipeTop extends React.Component{
   render() {
     return (
       <div>
+        <div className="nav-links text-outline">
+          <nav>
+            <ul>
+              <li><a href="#">{'{ABOUT}'}</a></li>
+              <li><a href="#">SKILLS</a></li>
+              <li><a href="#">PROJECTS</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div className="blue-nav-background" style={{display: `${this.state.radialWipeDone ? 'block' : 'none'}`}} />
+        <div className="reveal">
+          <div className="reveal--half">
+            <div className="dotted-box-top">
+              <div className="large-letters text-outline">My name is Stephen. I like to design user interfaces.</div>
+            </div>
+          </div>
+          <div className="reveal--half">
+            <div className="dotted-box-bottom">
+              <div className="large-letters">And I love to design the software behind them!</div>
+            </div>
+          </div>
+        </div>
+        <div className="" style={{display: "" }} />
         <div className="first-box" style={{transform: `rotate(${this.state.firstBoxPosition}deg)`}} />
-        <div className="second-box" style={{transform: `rotate(${this.state.secondBoxPosition}deg)`}} />
+        <div className="second-box" style={{transform: `rotate(${this.state.secondBoxPosition}deg)`, position: `${this.state.radialWipeDone ? 'relative' : 'fixed'}`, top: `${this.state.radialWipeDone ? '970px' : '70px'}`}}>
+          <div className="info-section">
+            Skills are listed here
+          </div>
+        </div>
       </div>
     );
   }
 }
 
+function Content() {
+  return (<div className="content-span" />)
+}
 
 
 
@@ -58,6 +96,7 @@ function App() {
   return (
     <div className="App">
       <RadialWipeTop />
+      <Content />
       
     </div>
   );
