@@ -1,6 +1,5 @@
 .App {
-  text-align: center;
-  height: 4400px;
+  height: 900px;
 }
 
 .App-logo {
@@ -33,6 +32,150 @@
   }
 }
 
+nav {
+  margin: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  margin: auto;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.nav-links {
+  position: fixed;
+  z-index: 6;
+  font-family: "Courier";
+  top: 0;
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  height: 70px;
+  
+}
+
+.blue-nav-background {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  background-color: darkblue;
+  z-index: 5;
+  top: 0;
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+.reveal {
+  position: fixed;
+  top: 70px;
+  color: white;
+  z-index: 2;
+  padding: 0 10vw;
+  width: 80vw;
+}
+
+.reveal--half {
+  height: calc((100vh - 70px)/2);
+}
+
+.large-letters {
+  font-size: calc(4vmin + 4vmax);
+  width: 80vw;
+  position: absolute;
+  left: 10vw;
+  margin: 2vmin;
+}
+
+.text-outline {
+  text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
+}
+
+.dotted-box-top {
+  border-width: 1px;
+  height: calc((100vh - 70px) * .4);
+  width: 90vw;
+  border-color: darkblue;
+  border-style: dashed none none dashed;
+}
+.dotted-box-top::before {
+  content: "";
+  position: fixed;
+  top: calc((100vh - 70px) * .5 + 60px);
+  left: calc(50% - 10px);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid darkblue;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {transform: translate(0, 0);}
+  50% {transform: translate(0, -10px);}
+  100% {transform: translate(0, 0);}
+}
+.dotted-box-top::after {
+  content: "";
+  position: fixed;
+  top: calc(((100vh - 70px) * .4) + 70px);
+  left: 10vw;
+  width: 40vw;
+  height: calc((100vh - 70px) * .1 - 10px);
+  border-style: dashed dashed none none;
+  border-width: 1px;
+  border-color: darkblue;
+}
+
+.dotted-box-bottom::before {
+  content: "";
+  position: fixed;
+  top: calc(100vh - 10px);
+  left: calc(50% - 10px);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+  animation: pulse 2s infinite;
+}
+.dotted-box-bottom {
+  position: fixed;
+  left: 0;
+  border-width: 1px;
+  height: calc((100vh - 70px) * .4);
+  width: 90vw;
+  border-color: white;
+  border-style: dashed dashed none none;
+}
+.dotted-box-bottom::after {
+  content: "";
+  position: fixed;
+  top: calc(((100vh - 70px) * .9) + 70px);
+  left: 50%;
+  width: 40vw;
+  height: calc((100vh - 70px) * .1 - 10px);
+  border-style: dashed none none dashed;
+  border-width: 1px;
+  border-color: white;
+}
+
+.info-section {
+  width: 100vw;
+  text-align: center;
+  font-size: 30px;
+}
+
+.content-span {
+  height: 4200px;
+}
+
 .first-box {
   background-color: darkblue;
   height: calc(100vh + 100vw);
@@ -41,13 +184,13 @@
   position: fixed;
   z-index: 1;
   top: 100vh;
+  box-shadow: 5px 5px 5px 5px black;
 }
 
 .second-box {
   background-color: white;
   height: calc(100vh - 70px);
   width: calc(100vh + 100vw);
-  transform: rotate(90deg);
   transform-origin: top left;
   position: fixed;
   z-index: 3;
