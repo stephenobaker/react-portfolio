@@ -115,15 +115,12 @@ nav li {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid darkblue;
-  animation: pulse 2s infinite;
 }
-@keyframes pulse {
-  0% {transform: translate(0, 0);}
-  50% {transform: translate(0, -10px);}
-  100% {transform: translate(0, 0);}
-}
+
 .dotted-box-top::after {
-  content: "";
+  content: "scroll down to see a cool swipe effect\00a0\00a0";
+  color: darkblue;
+  text-align: right;
   position: fixed;
   top: calc(((100vh - 70px) * .4) + 70px);
   left: 10vw;
@@ -144,7 +141,6 @@ nav li {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid white;
-  animation: pulse 2s infinite;
 }
 .dotted-box-bottom {
   position: fixed;
@@ -156,7 +152,8 @@ nav li {
   border-style: dashed dashed none none;
 }
 .dotted-box-bottom::after {
-  content: "";
+  content: "\00a0\00a0keep scrolling...";
+  color: white;
   position: fixed;
   top: calc(((100vh - 70px) * .9) + 70px);
   left: 50%;
