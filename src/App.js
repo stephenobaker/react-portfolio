@@ -284,7 +284,7 @@ function App() {
       <div className="info-section">
         <h1>Skills</h1>
         <strong>Languages:</strong> JavaScript, HTML, CSS<br />
-        <strong>Libraries/Frameworks:</strong> React, Bootstrap<br />
+        <strong>Libraries/Frameworks:</strong> React, Bootstrap, jQuery<br />
         <strong>Database/Backend:</strong> Firebase (NoSQL)<br />
         <strong>Testing:</strong> Enzyme, Jest, Jasmine<br />
         <strong>Version Control:</strong> Git/GitHub<br />
