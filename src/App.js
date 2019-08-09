@@ -189,11 +189,13 @@ function SeeWhosHomeProject(props) {
             <strong>React, Bootstrap, Firebase, JavaScript, HTML, CSS</strong>
           </p>
           <p>
-            I built this full-stack, responsive, single-page app over the course of two weeks. The front end is built with React and Bootstrap, and the back end
-            is built with Firebase's <em>Realtime Database</em> and <em>Authentication</em> services. It allows users to sign up with a Google account, create new
-            marketplaces, create new vendors and assign them to a marketplace created by another user, and indicate if the vendors they manage are currently open.
+            I built this full-stack, responsive, single-page app over the course of two weeks using this <a href="https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658">
+            guide for creating a React app from scratch</a>. The front end is built with React and Bootstrap, and the back end
+            is built with Firebase's Realtime Database and authentication service. It allows users to sign up with a Google account, create new marketplaces, create new
+            vendors and assign them to a marketplace created by another user, and indicate if the vendors they manage are currently open.
             Visitors to the site who aren't signed in can view the vendors for different marketplaces and see which vendors are currently open in real time. The
-            site is deployed using Firebase hosting.
+            site is deployed using Firebase hosting. Testing is set up with Enzyme and Jest and builds are integrated with Travis CI, so development of additional features in the future can be
+            fully test-driven.
           </p>
           <p>
             <a href="https://see-whos-home.firebaseapp.com/"><strong>Link to app</strong></a>
@@ -204,6 +206,10 @@ function SeeWhosHomeProject(props) {
         </div>
       </div>
       <div className="project-image">
+        <img alt="who's at the market project" src="images/see-whos-home.gif" />
+  
+        <img alt="who's at the market project" src="images/see-whos-home.gif" />
+
         <img alt="who's at the market project" src="images/see-whos-home.gif" />
       </div>
     </div>
