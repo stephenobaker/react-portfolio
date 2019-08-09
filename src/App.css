@@ -152,7 +152,7 @@ nav li {
   border-style: dashed dashed none none;
 }
 .dotted-box-bottom::after {
-  content: "\00a0\00a0...keep scrolling...";
+  content: "\00a0\00a0...keep scrolling";
   color: white;
   position: fixed;
   top: calc(((100vh - 70px) * .9) + 70px);
