@@ -274,7 +274,6 @@ function ReadingsParserProject(props) {
       </div>
       <div className="project-image">
         <img alt="readings parser 1" src="images/readings-parser-1.png" />
-        <img alt="readings parser 2" src="images/readings-parser-2.png" />
         <img alt="readings parser 3" src="images/readings-parser-3.png" />
       </div>
     </div>
