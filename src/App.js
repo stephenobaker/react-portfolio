@@ -206,11 +206,9 @@ function SeeWhosHomeProject(props) {
         </div>
       </div>
       <div className="project-image">
-        <img alt="who's at the market project" src="images/see-whos-home.gif" />
-  
-        <img alt="who's at the market project" src="images/see-whos-home.gif" />
-
-        <img alt="who's at the market project" src="images/see-whos-home.gif" />
+        <img alt="who's at the market 1" src="images/see-whos-home-1.png" />
+        <img alt="who's at the market 2" src="images/see-whos-home-2.png" />
+        <img alt="who's at the market 3" src="images/see-whos-home-3.png" />
       </div>
     </div>
   );
@@ -242,7 +240,9 @@ function ChordBolderProject(props) {
         </div>
       </div>
       <div className="project-image">
-        <img alt="chord bolder project" src="images/chord-bolder.gif" />
+        <img alt="chord bolder 1" src="images/chord-bolder-1.png" />
+        <img alt="chord bolder 3" src="images/chord-bolder-3.png" />
+        <img alt="chord bolder 4" src="images/chord-bolder-4.png" />
       </div>
     </div>
   );
@@ -273,7 +273,9 @@ function ReadingsParserProject(props) {
         </div>
       </div>
       <div className="project-image">
-        <img alt="reading parser project" src="images/text-parser.gif" />
+        <img alt="readings parser 1" src="images/readings-parser-1.png" />
+        <img alt="readings parser 2" src="images/readings-parser-2.png" />
+        <img alt="readings parser 3" src="images/readings-parser-3.png" />
       </div>
     </div>
   );
