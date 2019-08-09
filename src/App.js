@@ -181,20 +181,26 @@ function SeeWhosHomeProject(props) {
     <div className="project-window">
       <div className="project-description">
         <div>
-          <h2>Who's at the Market?</h2>
-          I built this fully-responsive, multi-user, cross-browser-compatible single-page app in about 2 weeks.
-          It was requested by a friend associated with Mainframe Studios in Des Moines so each individual vendor can show the public they're open in real time.
-
-          <h3>Technologies used:</h3>
-          <ul>
-            <li>React</li>
-            <li>Bootstrap</li>
-            <li>Firebase</li>
-          </ul>
-          <h3>Live demo:</h3>
-          <a href="https://see-whos-home.firebaseapp.com/">Who's at the Market?</a>
-          <h3>See code on GitHub:</h3>
-          <a href="https://github.com/stephenobaker/see-whos-home">Who's at the Market repo</a>
+          <h2>Vendor Status Tracker for Pop-Up Marketplaces</h2>
+          <p>
+            <em>June 2019</em>
+          </p>
+          <p>
+            <strong>React, Bootstrap, Firebase, JavaScript, HTML, CSS</strong>
+          </p>
+          <p>
+            I built this full-stack, responsive, single-page app over the course of two weeks. The front end is built with React and Bootstrap, and the back end
+            is built with Firebase's <em>Realtime Database</em> and <em>Authentication</em> services. It allows users to sign up with a Google account, create new
+            marketplaces, create new vendors and assign them to a marketplace created by another user, and indicate if the vendors they manage are currently open.
+            Visitors to the site who aren't signed in can view the vendors for different marketplaces and see which vendors are currently open in real time. The
+            site is deployed using Firebase hosting.
+          </p>
+          <p>
+            <a href="https://see-whos-home.firebaseapp.com/"><strong>Link to app</strong></a>
+          </p>
+          <p>
+            <a href="https://github.com/stephenobaker/see-whos-home"><strong>View code on GitHub</strong></a>
+          </p>
         </div>
       </div>
       <div className="project-image">
@@ -209,26 +215,29 @@ function ChordBolderProject(props) {
     <div className="project-window">
       <div className="project-description">
         <div>
-          <h2>Chord Bolder</h2>
-          I built this app in 2017 to automate the creation of “ring the bold lyrics” sheets that allow non-music-readers to play in a handbell choir. 
-          In July of 2019 I gave the app an updated user interface in under one day.
-
-          <h3>Technologies used:</h3>
-          <ul>
-            <li>jQuery</li>
-            <li>JavaScript</li>
-            <li>HTML, CSS</li>
-          </ul>
-          <h3>Live demo:</h3>
-          <a href="https://stephenobaker.github.io/chord-bolder/">Chord Bolder</a>
-          <h3>See code on GitHub:</h3>
-          <a href="https://github.com/stephenobaker/chord-bolder">Chord Bolder repo</a>
+          <h2>"Ring the Bold Lyrics" Handbell Sheet Creator</h2>
+          <p>
+            <em>December 2017</em>
+          </p>
+          <p>
+            <strong>JavaScript, jQuery, HTML, CSS</strong>
+          </p>
+          <p>
+            I built this client-side app over the course of a couple days to automate the creation of "ring the bold lyrics" handouts. These handouts, which allow members of a handbell choir to accompany
+            singing without reading music, allowed me to vastly increase music activity participation opportunities for children, congregation members, and nursing home residents in my previous role as a
+            church music director. A July 2019 update which took less than a day to complete resulted in a single-page, responsive UI and a few bug fixes.
+          </p>
+          <p>
+            <a href="https://stephenobaker.github.io/chord-bolder/"><strong>Link to app</strong></a>
+          </p>
+          <p>
+            <a href="https://github.com/stephenobaker/chord-bolder"><strong>View code on GitHub</strong></a>
+          </p>
         </div>
       </div>
       <div className="project-image">
         <img alt="chord bolder project" src="images/chord-bolder.gif" />
       </div>
-    
     </div>
   );
 }
@@ -238,35 +247,31 @@ function ReadingsParserProject(props) {
     <div className="project-window">
       <div className="project-description">
         <div>
-          <h2>Readings Parser</h2>
-          I built this parser to extract and format readings from raw text copied from sundaysandseasons.com for use in church bulletins.
-          It is a single-page, responsive app built with vanilla HTML, JavaScript, and CSS.
-
-
-          <h3>Technologies used:</h3>
-          <ul>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-          <h3>Live demo:</h3>
-          <a href="https://stephenobaker.github.io/reading-parser/">Readings Parser</a>
-          <h3>See code on GitHub:</h3>
-          <a href="https://github.com/stephenobaker/reading-parser">Readings Parser repo</a>
+          <h2>Lectionary Text Parser</h2>
+          <p>
+            <em>August 2017</em>
+          </p>
+          <p>
+            <strong>JavaScript, HTML, CSS</strong>
+          </p>
+          <p>
+            I built this client-side app in under a day, with vanilla JavaScript and some regex, to help the secretary at my church format lectionary readings for bulletin inserts and PowerPoint presentations.
+            I updated it in July 2019 by wrapping it in a single-page, responsive UI, which also took me less than a day to complete.
+          </p>
+          <p>
+            <a href="https://stephenobaker.github.io/reading-parser/"><strong>Link to app</strong></a>
+          </p>
+          <p>
+            <a href="https://github.com/stephenobaker/reading-parser"><strong>View code on GitHub</strong></a>
+          </p>
         </div>
       </div>
       <div className="project-image">
         <img alt="reading parser project" src="images/text-parser.gif" />
       </div>
-    
     </div>
   );
 }
-
-
-
-
-
 
 function App() {
   const aboutContent = (
@@ -294,7 +299,7 @@ function App() {
     const projectsContent = (
       <div>
         <div className="info-section">
-          <h1>Recent Projects</h1>
+          <h1>Sample Projects</h1>
         </div>
         <div className="projects-wrapper">
           
