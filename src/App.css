@@ -118,7 +118,7 @@ nav li {
 }
 
 .dotted-box-top::after {
-  content: "Scroll down to see a cool swipe effect...\00a0\00a0";
+  content: "Scroll down...\00a0\00a0";
   color: darkblue;
   text-align: right;
   position: fixed;
