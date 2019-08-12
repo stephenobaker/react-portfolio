@@ -65,7 +65,7 @@ class RadialWipeTop extends React.Component {
         <div className="reveal">
           <div className="reveal--half">
             <div className="dotted-box-top">
-              <div className="large-letters text-outline">Hi, I'm Stephen! I like to build responsive, modern UIs</div>
+              <div className="large-letters text-outline">Hi, I'm Stephen! I like to build fun, responsive, modern UIs</div>
             </div>
           </div>
           <div className="reveal--half">
@@ -189,13 +189,9 @@ function SeeWhosHomeProject(props) {
             <strong>React, Bootstrap, Firebase, JavaScript, HTML, CSS</strong>
           </p>
           <p>
-            I built this full-stack, responsive, single-page app over the course of two weeks using this <a href="https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658">
-            guide for creating a React app from scratch</a>. The front end is built with React and Bootstrap, and the back end
-            is built with Firebase's Realtime Database and authentication service. It allows users to sign up with a Google account, create new marketplaces, create new
-            vendors and assign them to a marketplace created by another user, and indicate if the vendors they manage are currently open.
-            Visitors to the site who aren't signed in can view the vendors for different marketplaces and see which vendors are currently open in real time. The
-            site is deployed using Firebase hosting. Testing is set up with Enzyme and Jest and builds are integrated with Travis CI, so development of additional features in the future can be
-            fully test-driven.
+            I built this full-stack, responsive, single-page app over the course of two weeks using React and Bootstrap for the front end and
+            Firebase for the back end. It allows vendors with irregular hours or locations (like food trucks, artist in co-ops, and farmers market stands),
+            to broadcast their location and status in real time.
           </p>
           <p>
             <a href="https://see-whos-home.firebaseapp.com/"><strong>Link to app</strong></a>
@@ -219,7 +215,7 @@ function ChordBolderProject(props) {
     <div className="project-window">
       <div className="project-description">
         <div>
-          <h2>"Ring the Bold Lyrics" Handbell Sheet Creator</h2>
+          <h2>"Ring the Bold Lyrics" Handout Creator</h2>
           <p>
             <em>December 2017</em>
           </p>
@@ -227,9 +223,9 @@ function ChordBolderProject(props) {
             <strong>JavaScript, jQuery, HTML, CSS</strong>
           </p>
           <p>
-            I built this client-side app over the course of a couple days to automate the creation of "ring the bold lyrics" handouts. These handouts, which allow members of a handbell choir to accompany
-            singing without reading music, allowed me to vastly increase music activity participation opportunities for children, congregation members, and nursing home residents in my previous role as a
-            church music director. A July 2019 update which took less than a day to complete resulted in a single-page, responsive UI and a few bug fixes.
+            I built this client-side web app in three days. It automates the creation of "ring the bold lyrics" handouts, which allow non-music-readers
+            to play in a hand bell or hand chime group, vastly increasing participation opportunities in music programs at churches, schools, and
+            nursing homes.
           </p>
           <p>
             <a href="https://stephenobaker.github.io/chord-bolder/"><strong>Link to app</strong></a>
@@ -261,8 +257,8 @@ function ReadingsParserProject(props) {
             <strong>JavaScript, HTML, CSS</strong>
           </p>
           <p>
-            I built this client-side app in under a day, with vanilla JavaScript and some regex, to help the secretary at my church format lectionary readings for bulletin inserts and PowerPoint presentations.
-            I updated it in July 2019 by wrapping it in a single-page, responsive UI, which also took me less than a day to complete.
+            I built this client-side app in under a day with vanilla JavaScript to help the secretary at my church format lectionary readings for bulletin inserts and PowerPoint presentations.
+            A July 2019 update gave it a single-page, responsive UI.
           </p>
           <p>
             <a href="https://stephenobaker.github.io/reading-parser/"><strong>Link to app</strong></a>
@@ -284,11 +280,11 @@ function App() {
   const aboutContent = (
       <div className="info-section">
         <h1>About Me</h1>
-        I'm a professional musician and front end developer.
+        I'm a professional musician and developer.
         For the last 6 years, I led a music program at a church in northwest Iowa, where I 
         built applications to automate the arrangement of new music 
         and the creation of teaching materials.
-        I love solving problems and creating value for organizations.
+        I've recently moved to Des Moines and am looking for Front End Developer opportunities.
       </div>
 
     );
@@ -297,7 +293,7 @@ function App() {
         <h1>Skills</h1>
         <strong>Languages:</strong> JavaScript, HTML, CSS<br />
         <strong>Libraries/Frameworks:</strong> React, Bootstrap, jQuery<br />
-        <strong>Database/Backend:</strong> Firebase (NoSQL)<br />
+        <strong>Database/Backend:</strong> Firebase<br />
         <strong>Testing:</strong> Enzyme, Jest, Jasmine<br />
         <strong>Version Control:</strong> Git/GitHub<br />
       </div>
@@ -321,7 +317,7 @@ function App() {
         
         <div className="info-section text-center">
           <h1>Let's get in touch!</h1>
-          I'm currently available for new opportunities. I'd love to help you with your project!
+          
         
         
 
