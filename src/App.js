@@ -65,12 +65,12 @@ class RadialWipeTop extends React.Component {
         <div className="reveal">
           <div className="reveal--half">
             <div className="dotted-box-top">
-              <div className="large-letters text-outline">Hi, I'm Stephen! I build responsive, modern websites</div>
+              <div className="large-letters text-outline">Hi, I'm Stephen! I like to build responsive, modern UIs</div>
             </div>
           </div>
           <div className="reveal--half">
             <div className="dotted-box-bottom">
-              <div className="large-letters">on top of the latest technologies.</div>
+              <div className="large-letters">and I <em>love</em> to write the software behind them.</div>
             </div>
           </div>
         </div>
@@ -306,7 +306,7 @@ function App() {
     const projectsContent = (
       <div>
         <div className="info-section">
-          <h1>Sample Projects</h1>
+          <h1>Projects</h1>
         </div>
         <div className="projects-wrapper">
           
