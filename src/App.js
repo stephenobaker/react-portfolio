@@ -284,7 +284,7 @@ function App() {
         For the last 6 years, I led a music program at a church in northwest Iowa, where I 
         built applications to automate the arrangement of new music 
         and the creation of teaching materials.
-        I've recently moved to Des Moines and am looking for Front End Developer opportunities.
+        I've recently moved to Des Moines and am looking for opportunities.
       </div>
 
     );
