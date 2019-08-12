@@ -375,7 +375,12 @@ function App() {
         <Blocks linkable={true} sectionObjects={sectionObjects} radialWipeDone={true} liftState={function() {return;}} />
 
       </div>
-      <div className="bottom-banner" />
+      <div className="bottom-banner">
+        <div className="bottom-banner-text">
+          <p>Copyright 2019 Stephen Baker</p>
+          <p>View the code for this portfolio <a href="https://github.com/stephenobaker/react-portfolio">here</a>.</p>
+        </div>
+      </div>
       
     </div>
   );

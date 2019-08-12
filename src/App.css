@@ -234,7 +234,7 @@ nav li {
 
 
 .contact-link-wrapper {
-  margin: 10px auto;
+  margin: 10px auto 100px auto;
 }
 
 .contact-logo {
@@ -248,11 +248,22 @@ nav li {
 
 
 .bottom-banner {
-  height: 80vh;
+  height: calc(50px + 40vh);
   width: 100%;
-  background-color: white;
+  background-color: darkblue;
   position: relative;
   z-index: 4;
+  display: flex;
+}
+
+.bottom-banner-text {
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.bottom-banner-text a {
+  color: white;
 }
 
 .background-box {
