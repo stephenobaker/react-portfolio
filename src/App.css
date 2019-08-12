@@ -8,8 +8,7 @@ body {
 }
 
 h1 {
-  margin: 0 auto 20px auto;
-  
+  margin: calc(70px + 3vh) auto 20px auto;
   text-align: center;
 }
 
@@ -171,7 +170,6 @@ nav li {
   width: 100vw;
   position: relative;
   background-color: white;
-  padding: 10vh 0 0 0;
   overflow: hidden;
 }
 
@@ -217,7 +215,7 @@ nav li {
 }
 
 .project-image {
-  max-width: 300px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 5px;
 }
