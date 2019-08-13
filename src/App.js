@@ -190,7 +190,7 @@ function SeeWhosHomeProject(props) {
           </p>
           <p>
             I built this full-stack, responsive, single-page app over the course of two weeks using React and Bootstrap for the front end and
-            Firebase for the back end. It allows vendors with irregular hours or locations (like food trucks, artist in co-ops, and farmers market stands),
+            Firebase for the back end. It allows vendors with irregular hours or locations (like food trucks, artists in a co-op, and farmers' market stands)
             to broadcast their location and status in real time.
           </p>
           <p>
