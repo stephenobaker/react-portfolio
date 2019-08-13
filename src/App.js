@@ -280,11 +280,20 @@ function App() {
   const aboutContent = (
       <div className="info-section">
         <h1>About Me</h1>
-        I'm a professional musician and developer.
-        For the last 6 years, I led a music program at a church in northwest Iowa, where I 
-        built applications to automate the arrangement of new music 
-        and the creation of teaching materials.
-        I've recently moved to Des Moines and am looking for opportunities.
+        <p>
+          My work history is a good conversation starter at parties. For more than six years, I've been a full-time professional musician. For just as long, I've had software development as a 
+          passion on the side. Prior to that, I got a hands-on education in business, finance, and manufacturing while working alongside Trappist monks at their monastery's bakery.
+        </p>
+        <br />
+        <p>
+          I'm interested in a lot of topics, and I can't stand not knowing how something works. That curiosity, that urge to dig in and take something
+          apart, to build something just to see if it's possible, has been one of the driving forces behind my pursuits as a developer. The other driving force has been a desire to create
+          value, eliminate tedious tasks, and make new things possible that wouldn't be possible without a little bit of software.
+        </p>
+        <br />
+        <p>
+          I've recently relocated to Des Moines, Iowa, and I'm seeking a team of like-minded individuals where I can continue my never-ending pursuit to be a better developer tomorrow than I am today.
+        </p>
       </div>
 
     );
