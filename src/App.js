@@ -1,3 +1,11 @@
+/**
+* 
+* REACT PORTFOLIO
+* (c) 2019 STEPHEN BAKER
+*
+*/
+
+
 import React from 'react';
 import './App.css';
 
