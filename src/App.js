@@ -289,18 +289,15 @@ function App() {
       <div className="info-section">
         <h1>About Me</h1>
         <p>
-          My work history is a good conversation starter at parties. For more than six years, I've been a full-time professional musician. For just as long, I've had software development as a 
-          passion on the side. Prior to that, I got a hands-on education in business, finance, and manufacturing while working alongside Trappist monks at their monastery's bakery.
+          I'm a professional musician and software developer living in Des Moines, Iowa.
         </p>
         <br />
         <p>
-          I'm interested in a lot of topics, and I can't stand not knowing how something works. That curiosity, that urge to dig in and take something
-          apart, to build something just to see if it's possible, has been one of the driving forces behind my pursuits as a developer. The other driving force has been a desire to create
-          value, eliminate tedious tasks, and make new things possible that wouldn't be possible without a little bit of software.
+          I build JavaScript applications in a Node environment using ES6 and modern front end technologies (Webpack, Babel, etc.). I create user interfaces using React, and I've built all of my full stack applications using Firebase Realtime Database and user authenticaiton. Now I'm currently expanding my Node knowledge to become a MERN developer, although I'm also interested in learning Angular and C#.NET.
         </p>
         <br />
         <p>
-          I've recently relocated to Des Moines, Iowa, and I'm seeking a team of like-minded individuals where I can continue my never-ending pursuit to be a better developer tomorrow than I am today.
+          I'm currently seeking my first full-time developer role.
         </p>
       </div>
 
@@ -308,11 +305,9 @@ function App() {
     const skillsContent = (
       <div className="info-section">
         <h1>Skills</h1>
-        <strong>Languages:</strong> JavaScript, HTML, CSS<br />
-        <strong>Libraries/Frameworks:</strong> React, Bootstrap, jQuery<br />
-        <strong>Database/Backend:</strong> Firebase<br />
-        <strong>Testing:</strong> Enzyme, Jest, Jasmine<br />
-        <strong>Version Control:</strong> Git/GitHub<br />
+        <strong>Languages:</strong> JavaScript, HTML, CSS, JSX<br />
+        <strong>Libraries/Frameworks:</strong> Node, React, Bootstrap<br />
+        <strong>Other:</strong> Git/GitHub, Mocha/Chai (TDD), Webpack, Babel, Firebase<br />
       </div>
 
     );
